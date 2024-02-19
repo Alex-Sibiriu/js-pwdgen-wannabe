@@ -4,4 +4,7 @@ const favoriteColor = prompt('Inserisci il tuo colore preferito');
 const favoriteNumber = prompt('Inserisci il tuo numero preferito')
 const password = firstName + lastName + favoriteColor + favoriteNumber;
 
-console.log(password)
+console.log(password);
+
+document.getElementById('pwd-generated').innerHTML = 
+`Questa è la tua password: <strong>${password}</strong>`;
